@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin"
+    tools:context=".EditUserInfoActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editUserInfo_NameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editUserInfo_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad"
+            android:inputType="textPersonName"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editUserInfo_SurnameWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editUserInfo_Surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soyad"
+            android:inputType="textPersonName"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editUserInfo_PhoneWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editUserInfo_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(123)4567890"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editUserInfo_btnUpdate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Güncelle"
+        android:layout_gravity="center"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_baseline_create_24"
+        app:iconPadding="-20dp"
+        ></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editUserInfo_btnCancel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="İptal"
+        android:layout_gravity="center"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:iconPadding="-20dp"
+        ></com.google.android.material.button.MaterialButton>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
